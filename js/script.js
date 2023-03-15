@@ -26,7 +26,7 @@ function CreateUnorderedList(values){
     const unorderedList = document.createElement("ul");
     let counter = 0;
     while(counter<values.length){
-        unorderedList.appendChild(CreateListItem(values[i]));
+        unorderedList.appendChild(CreateListItem(values[counter]));
         counter++;
     }
     return unorderedList;
