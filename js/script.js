@@ -24,8 +24,11 @@ document.body.appendChild(CreateUnorderedList(shoppingList));
  */
 function CreateUnorderedList(values){
     const unorderedList = document.createElement("ul");
-    for(let i=0; i<values.length; i++)
+    let counter = 0;
+    while(counter<values.length){
         unorderedList.appendChild(CreateListItem(values[i]));
+        counter++;
+    }
     return unorderedList;
 }
 
