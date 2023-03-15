@@ -18,6 +18,12 @@
 }
 
 /* Shopping list */
+.shoppingList{
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
 .shoppingList ul{
     list-style: none;
 }
