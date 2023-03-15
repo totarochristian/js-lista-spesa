@@ -16,3 +16,8 @@
     align-items: center;
     align-content: center;
 }
+
+/* Shopping list */
+.shoppingList ul{
+    list-style: none;
+}
