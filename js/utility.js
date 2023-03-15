@@ -5,7 +5,8 @@
  * @returns Returns a div with class shoppingList that contains an header and an unordered list.
  */
 function CreateShoppingList(values,title){
-    const div = document.createElement("div.shoppingList");
+    const div = document.createElement("div");
+    div.classList.add("shoppingList");
     const header = document.createElement("h2");
     header.innerText = title;
     div.appendChild(header);
