@@ -17,6 +17,8 @@ const shoppingList1 = ["Melanzane","Zucchine","Peperoni"];
 const shoppingList2 = ["Pere","Banane","Fragole","Kiwi","Mele"];
 const shoppingList3 = ["Spaghetti","Penne","Fusilli","Conchigliette"];
 
-document.body.appendChild(CreateShoppingList(shoppingList1,"Verdura"));
-document.body.appendChild(CreateShoppingList(shoppingList2,"Frutta"));
-document.body.appendChild(CreateShoppingList(shoppingList3,"Pasta"));
+const listContainer = document.getElementById("listContainer");
+
+listContainer.appendChild(CreateShoppingList(shoppingList1,"Verdura"));
+listContainer.appendChild(CreateShoppingList(shoppingList2,"Frutta"));
+listContainer.appendChild(CreateShoppingList(shoppingList3,"Pasta"));
