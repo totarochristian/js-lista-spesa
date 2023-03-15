@@ -15,11 +15,15 @@ How can I loop through an array with while loop?
 
 const shoppingList = ["Melanzane","Zucchine","Pere","Spaghetti Barilla","Penne Barilla","Tonno","Aglio","Cipolle"];
 
-const unorderedList = document.createElement("ul");
-for(let i=0; i<shoppingList.length; i++)
-    unorderedList.appendChild(CreateListItem(shoppingList[i]));
-document.body.appendChild(unorderedList);
+document.body.appendChild(CreateList(shoppingList));
 
+
+function CreateList(values){
+    const unorderedList = document.createElement("ul");
+    for(let i=0; i<values.length; i++)
+        unorderedList.appendChild(CreateListItem(values[i]));
+    return unorderedList;
+}
 
 function CreateListItem(value){
     const listItem = document.createElement("li");
